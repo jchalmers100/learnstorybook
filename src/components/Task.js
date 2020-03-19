@@ -5,12 +5,13 @@ export default function Task({ task: { id, title, state }, onArchiveTask, onPinT
   return (
     <div className={`list-item ${state}`}>
       <label className="checkbox">
-        <input
-          type="checkbox"
-          defaultChecked={state === 'TASK_ARCHIVED'}
-          disabled={true}
-          name="checked"
-        />
+      <input
+        type="text"
+        value={title}
+        readOnly={true}
+        placeholder="Input title"
+        style={{ textOverflow: 'ellipsis' }}
+    />
         <span className="checkbox-custom" onClick={() => onArchiveTask(id)} />
       </label>
       <div className="title">
