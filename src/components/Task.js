@@ -6,7 +6,7 @@ export default function Task({ task: { id, title, state }, onArchiveTask, onPinT
     <div className={`list-item ${state}`}>
       <label className="checkbox">
       <input
-        type="text"
+        type="checkbox"
         value={title}
         readOnly={true}
         placeholder="Input title"

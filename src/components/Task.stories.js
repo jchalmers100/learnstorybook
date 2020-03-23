@@ -8,6 +8,14 @@ export default {
   component: Task,
   title: 'Task',
   decorators: [withKnobs],
+  parameters: {
+    assets: [
+      'public/designs/app.png',
+      'public/designs/items.png',
+      'public/designs/list-1.png',
+      'public/designs/list-2.png',
+    ],
+  },
   excludeStories: /.*Data$/,
 };
 
